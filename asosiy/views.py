@@ -17,8 +17,8 @@ def blog(requests):
     return render(requests, "blog.html", content)
 
 
-# def maqola(requests, slug):
-#     content = {
-#         "maqola": Maqola.objects.filter(slug=slug)
-#     }
-#     return render(requests, "maqola.html",content)
+def maqola(requests, slug):
+    content = {
+        "maqola": Maqola.objects.filter(slug=slug)
+    }
+    return render(requests, "maqola.html",content)

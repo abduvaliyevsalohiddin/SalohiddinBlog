@@ -11,6 +11,6 @@ urlpatterns = [
     path('', home),
     path('about/', about),
     path('blog/', blog),
-    # path('maqola/<str:slug>/', maqola),
+    path('maqola/<str:slug>/', maqola),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
